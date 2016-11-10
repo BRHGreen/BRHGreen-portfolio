@@ -771,7 +771,7 @@
 	#header
 	{
 		position: relative;
-		background: url(../images/header.jpg) no-repeat bottom center;
+		background: url(../images/back-blank-top.png) no-repeat bottom center;
 		background-attachment: fixed;
 		background-size: cover;
 		text-align: center;
@@ -810,7 +810,7 @@
 			font-weight: 300;
 			line-height: 1em;
 			font-size: 7em;
-			color: #FFF;
+			color: #F3F4F9;
 			letter-spacing: -0.05em;
 			margin: 0 0 0.125em 0;
 		}
@@ -818,7 +818,7 @@
 		#logo span
 		{
 			font-size: 1.4em;
-			color: #FFF;
+			color: #F3F4F9;
 		}
 
 /*********************************************************************************/
@@ -986,7 +986,7 @@
 	{
 		position: relative;
 		text-align: center;
-		background: url(../images/header.jpg) no-repeat center center;
+		background: url(../images/back-blank-bottom.png) no-repeat center center;
 		background-attachment: fixed;
 		background-size: cover;
 	}
