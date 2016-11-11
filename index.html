@@ -1,76 +1,40 @@
 ---
-title: Linear
 layout: default
 ---
-<!-- Featured -->
-<div id="featured">
-	<div class="container">
-		<header>
-			<h2>Welcome to my portfolio</h2>
-		</header>
-		<p>Hi there. I am a junior web developer and <a href="https://generalassemb.ly/education/web-development-immersive-remote">General Assembly WDI</a> alumni. I have created this site to showcase the skills I have learnt and projects I have worked on as a developer so please have a browse and <a href="mailto:benedictgreen@gmail.com">email</a> me if you have any questions, thoughts or comments. Thanks for visiting.</p>
-<hr />
-		<div class="row">
-			<section class="4u">
-				<span class="pennant"><span class="fa fa-briefcase"></span></span>
-				<h3>My Projects</h3>
-				<p>During my studies and subsequently I have created a number of websites both as solo projects and in collaboration with others. Further details available here.</p>
-				<a href="#" class="button button-style1">More</a>
-			</section>
-			<section class="4u">
-				<span class="pennant"><span class="fa fa-lock"></span></span>
-				<h3>My CV</h3>
-				<p>Click here for further details on my key web development skills and other employment history. I was a sound engineer once, you know.</p>
-				<a href="#" class="button button-style1">More</a>
-			</section>
-			<section class="4u">
-				<span class="pennant"><span class="fa fa-globe"></span></span>
-				<h3>About me</h3>
-				<p>This section is less about my technical skills and more about me. I just thought "why let my OK Cupid profile be confined to just one website?"</p>
-				<a href="#" class="button button-style1">More</a>
-			</section>
 
-		</div>
-	</div>
+<div class="home">
+
+
+  {% for post in site.posts%}
+  <div class="post postContent">
+    <div  class="postDate"><time datetime="{{ post.date | date_to_xmlschema }}" itemprop="datePublished">{{ post.date | date: "%b %-d, %Y" }}</time>
+    </div>
+    <div class="postDay">
+      {{post.tag}}
+    </div>
+    <br>
+    <div class="postTitle">
+    <a class='postLink' href="{{site.url}}{{site.baseurl}}{{post.url}}">{{post.title}}</a>
+    </div>
+    <div class="postExt">
+   {{ post.content | strip_html | truncatewords:20}}
+    </div>
+  </div>
+
+
+  {% endfor %}
+  <!--<ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <span class="post-meta-main">{{ post.date | date: "%b %-d, %Y" }}</span>
+
+        <h2>
+          <a class="post-link-main" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+        </h2>
+      </li>
+    {% endfor %}
+  </ul>-->
+
+
+
 </div>
-
-<!-- Main -->
-	<div id="main">
-		<div id="content" class="container">
-
-			<!-- <div class="row">
-				<section class="6u">
-					<a href="#" class="image full"><img src="/assets/images/pic01.jpg" alt=""></a>
-					<header>
-						<h2>Mauris vulputate dolor</h2>
-					</header>
-					<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
-				</section>
-				<section class="6u">
-					<a href="#" class="image full"><img src="/assets/images/pic02.jpg" alt=""></a>
-					<header>
-						<h2>Mauris vulputate dolor</h2>
-					</header>
-					<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
-				</section>
-			</div>
-
-			<div class="row">
-				<section class="6u">
-					<a href="#" class="image full"><img src="/assets/images/pic03.jpg" alt=""></a>
-					<header>
-						<h2>Mauris vulputate dolor</h2>
-					</header>
-					<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
-				</section>
-				<section class="6u">
-					<a href="#" class="image full"><img src="/assets/images/pic04.jpg" alt=""></a>
-					<header>
-						<h2>Mauris vulputate dolor</h2>
-					</header>
-					<p>In posuere eleifend odio. Quisque semper augue mattis wisi. Maecenas ligula. Pellentesque viverra vulputate enim. Aliquam erat volutpat. Donec leo, vivamus fermentum nibh in augue praesent a lacus at urna congue rutrum.</p>
-				</section>
-			</div> -->
-
-		</div>
-	</div>
