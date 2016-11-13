@@ -245,7 +245,8 @@ pre {
   font-size: 64px;
   font-weight: 100;
   font-family: "Quicksand", sans-serif;
-  font-weight: 500; }
+  font-weight: 500;
+  padding-top: 0.5em; }
   .site-title, .site-title:visited {
     color: #505B69; }
 
@@ -254,26 +255,25 @@ pre {
   letter-spacing: 12px;
   text-indent: 8px;
   font-family: "Quicksand", sans-serif;
-  color: #505B69; }
+  color: #505B69;
+  padding-bottom: 1em; }
 
 .header-img {
   background-image: url("../images/back-blank-top.png");
   background-repeat: no-repeat;
   background-size: cover; }
 
-.exclamationMark {
-  padding-left: 2em;
-  padding-right: 2em; }
-
 .site-navigation {
-  color: #aaa;
   text-transform: uppercase;
   font-size: 14px;
   letter-spacing: 2px;
   text-indent: 6px;
   font-family: 'Josefin Sans';
   font-weight: 300;
-  padding-top: 5em; }
+  padding-top: 2em;
+  padding-bottom: 2em;
+  text-align: center;
+  background-color: #ffffff; }
 
 .page-title {
   text-transform: uppercase;
@@ -290,7 +290,9 @@ pre {
   text-transform: lowercase; }
 
 .page-link {
-  color: #aaaaaa; }
+  color: #aaaaaa;
+  padding-left: 4.5em;
+  padding-right: 4.5em; }
 
 .site-nav .page-link {
   color: #505B69;
@@ -336,12 +338,12 @@ pre {
  * Site footer
  */
 .site-footer {
-  border-top: 1px solid #D9DEE9;
   padding: 30px 0;
   background-image: url("../images/back-blank-bottom.png");
   background-repeat: no-repeat;
   background-size: cover;
-  text-align: center; }
+  text-align: center;
+  background-position: 0% 20%; }
 
 .contact {
   max-width: 80%;
