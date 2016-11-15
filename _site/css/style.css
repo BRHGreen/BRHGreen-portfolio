@@ -50,7 +50,7 @@ figcaption {
 * Lists
 */
 ul, ol {
-  margin-left: 30px; }
+  margin-left: 0; }
 
 li > ul,
 li > ol {
@@ -256,6 +256,12 @@ h1, h2, h3, h4, h5, h6 {
     width: 30px;
     padding-left: 5%;
     padding-right: 5%; } }
+@media screen and (min-height: 700px) {
+  .site-footer {
+    height: 150px; }
+
+  .contact {
+    padding-top: 50px; } }
 .home {
   max-width: 64%;
   margin: 0 auto;
@@ -265,6 +271,8 @@ h1, h2, h3, h4, h5, h6 {
     word-wrap: break-word;
     display: inline-block;
     text-align: justify; }
+  .home a {
+    padding: 0; }
 
 .me {
   background-image: url("../images/me.jpg");
@@ -272,15 +280,58 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-size: cover;
   width: 220px;
-  height: 220px;
+  height: 280px;
   float: left;
-  margin-right: 5%; }
+  margin-right: 3%;
+  margin-top: 7px; }
 
 .about-1 p {
   font-size: 1em;
   word-wrap: break-word;
-  display: inline-block;
   text-align: justify; }
+
+.about-headings {
+  border-bottom: 1px solid #C8D0D8;
+  text-transform: uppercase;
+  padding-top: 10%; }
+
+.me-text {
+  font-size: 1em;
+  word-wrap: break-word;
+  text-align: justify; }
+  .me-text a {
+    padding: 0; }
+
+#me-text {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center; }
+
+.ga h4, .ga i {
+  display: inline-block;
+  padding-bottom: 2%; }
+.ga i {
+  font-weight: 14px;
+  color: #7d90a3; }
+.ga h4 {
+  margin: 0;
+  padding-top: 2%; }
+
+.me-skills ul, .me-skills li {
+  list-style: none;
+  font-size: 19.2px; }
+
+.list-wrapper-all {
+  border-top: 1px solid #C8D0D8;
+  border-bottom: 1px solid #C8D0D8; }
+
+.list-wrapper {
+  display: inline-block;
+  width: 32%;
+  padding-top: 5%;
+  padding-bottom: 5%; }
+  .list-wrapper li {
+    text-align: center; }
 
 .contact-list,
 .social-media-list {

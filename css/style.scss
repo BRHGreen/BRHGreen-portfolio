@@ -5,10 +5,11 @@
 
 
 
-// Our variables
+//Variables
 $base-font-family: 'Quicksand', sans-serif;
 $base-font-size:   16px;
 $base-font-weight: 400;
+$large-font-size: $base-font-size * 1.2;
 $small-font-size:  $base-font-size * 0.875;
 $base-line-height: 1.5;
 
@@ -120,7 +121,7 @@ figcaption {
 * Lists
 */
 ul, ol {
-  margin-left: $spacing-unit;
+  margin-left: 0;
 }
 
 li {
@@ -400,6 +401,14 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
+@media screen and (min-height: 700px) {
+  .site-footer {
+    height: 150px;
+  }
+  .contact {
+    padding-top: 50px;
+  }
+}
 
 
 .home {
@@ -412,6 +421,9 @@ h1, h2, h3, h4, h5, h6 {
     display: inline-block;
     text-align: justify;
   }
+  a {
+    padding: 0;
+  }
 }
 
 
@@ -421,18 +433,75 @@ h1, h2, h3, h4, h5, h6 {
   background-repeat: no-repeat;
   background-size: cover;
   width: 220px;
-  height: 220px;
+  height: 280px;
   float: left;
-  margin-right: 5%;
+  margin-right: 3%;
+  margin-top: 7px;
 }
 
 .about-1 {
   p {
     font-size: 1em;
     word-wrap: break-word;
-    display: inline-block;
     text-align: justify;
   }
+}
+
+.about-headings {
+  border-bottom: 1px solid $grey-color;
+  text-transform: uppercase;
+  padding-top: 10%;
+}
+
+.me-text {
+    font-size: 1em;
+    word-wrap: break-word;
+    text-align: justify;
+    a {
+      padding: 0;
+    }
+}
+#me-text {
+  padding-top: 2%;
+  padding-bottom: 2%;
+  text-align: center;
+}
+
+
+.ga {
+  h4, i {
+    display: inline-block;
+    padding-bottom: 2%;
+  }
+  i {
+    font-weight: $small-font-size;
+    color: $grey-color-dark;
+  }
+  h4 {
+    margin: 0;
+    padding-top: 2%;
+  }
+}
+
+
+.me-skills {
+  ul, li {
+    list-style: none;
+    font-size: $large-font-size;
+  }
+}
+.list-wrapper-all {
+  border-top: 1px solid $grey-color;
+  border-bottom: 1px solid $grey-color;
+}
+.list-wrapper {
+  display: inline-block;
+  width: 32%;
+  li {
+    text-align: center;
+  }
+  padding-top: 5%;
+  padding-bottom: 5%;
 }
 
 .contact-list,
