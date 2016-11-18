@@ -10,7 +10,7 @@ title: benedict green
 email: benedictgreen@gmail.com
 description: web developer
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site
+url: "benedictgreen.uk" # the base hostname & protocol for your site
 github_username:  BRHGreen
 
 # Build settings
