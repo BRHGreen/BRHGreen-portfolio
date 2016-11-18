@@ -211,11 +211,6 @@ header {
   }
 }
 
-
-.home{
-  padding-bottom: 5em;
-}
-
 /**
 * Site header
 */
@@ -417,7 +412,7 @@ header {
 .home {
   max-width: 64%;
   margin: 0 auto;
-  padding-bottom: 5%;
+  padding-bottom: 90px;
   p {
     font-size: 1.2em;
     word-wrap: break-word;
@@ -428,6 +423,11 @@ header {
     padding: 0;
   }
 }
+.header-padding-index {
+  height: 50px;
+  width: 100%;
+  // background-color: $grey-color-light;
+}
 
 // about-page
 .about-section {
@@ -437,6 +437,7 @@ header {
   padding-bottom: 1%;
   padding-left: 2%;
   padding-right: 2%;
+  width: 100%;
 }
 
 .me {
@@ -545,7 +546,7 @@ header {
 .header-padding {
   height: 30px;
   width: 100%;
-  background-color: $grey-color-light;
+  // background-color: $grey-color-light;
 }
 
 .projects-wrapper {
@@ -645,8 +646,9 @@ header {
 */
 .page-content {
   padding: 0;
-  background-color: $grey-color-light;
+  background-color: #ffffff;
 }
+
 .page-heading {
   font-size: 20px;
 }

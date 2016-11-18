@@ -109,9 +109,6 @@ header {
   display: table;
   clear: both; }
 
-.home {
-  padding-bottom: 5em; }
-
 /**
 * Site header
 */
@@ -269,7 +266,7 @@ header {
 .home {
   max-width: 64%;
   margin: 0 auto;
-  padding-bottom: 5%; }
+  padding-bottom: 90px; }
   .home p {
     font-size: 1.2em;
     word-wrap: break-word;
@@ -278,13 +275,18 @@ header {
   .home a {
     padding: 0; }
 
+.header-padding-index {
+  height: 50px;
+  width: 100%; }
+
 .about-section {
   background: #ffffff;
   margin-top: 5%;
   margin-bottom: 5%;
   padding-bottom: 1%;
   padding-left: 2%;
-  padding-right: 2%; }
+  padding-right: 2%;
+  width: 100%; }
 
 .me {
   background-image: url("../images/me.jpg");
@@ -366,8 +368,7 @@ header {
 
 .header-padding {
   height: 30px;
-  width: 100%;
-  background-color: #D9DEE9; }
+  width: 100%; }
 
 .projects-wrapper {
   clear: both; }
@@ -449,7 +450,7 @@ header {
 */
 .page-content {
   padding: 0;
-  background-color: #D9DEE9; }
+  background-color: #ffffff; }
 
 .page-heading {
   font-size: 20px; }
