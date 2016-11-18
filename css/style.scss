@@ -619,11 +619,14 @@ header {
   background-image: url("../images/lex.png");
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 760px) {
   .project-pictures, .projects-text-box {
     float: none;
     padding: 2%;
     margin: 0 auto;
+  }
+  .projects-text-box {
+    max-width: 75%;
   }
   .list-wrapper {
     display: inline;
