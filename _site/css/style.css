@@ -76,6 +76,10 @@ h1, h2, h3, h4, h5, h6 {
 .contact a:hover, .contact img:hover {
   opacity: 0.8 !important; }
 
+header {
+  height: 100%;
+  width: 100%; }
+
 /**
 * Wrapper
 */
