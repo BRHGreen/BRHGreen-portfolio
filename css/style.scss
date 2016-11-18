@@ -430,6 +430,15 @@ header {
 }
 
 // about-page
+.about-section {
+  background: #ffffff;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-bottom: 1%;
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
 .me {
   background-image: url("../images/me.jpg");
   background-position: 100% 25%;
@@ -453,7 +462,7 @@ header {
 .about-headings {
   border-bottom: 1px solid $grey-color;
   text-transform: uppercase;
-  padding-top: 10%;
+  padding-top: 5%;
 }
 
 .me-text {
@@ -516,8 +525,28 @@ header {
   font-family: $base-font-family;
 }
 
+@media screen and (max-width: 500px) {
+  .me {
+    float: none;
+    margin: 0 auto;
+  }
+}
+
 
 // projects-page
+
+.projects-section {
+  background-color: #FFFFFF;
+  margin-top: 5%;
+  margin-bottom: 5%;
+  padding-left: 1%;
+  padding-right: 1%;
+}
+.header-padding {
+  height: 30px;
+  width: 100%;
+  background-color: $grey-color-light;
+}
 
 .projects-wrapper {
   clear: both;
@@ -616,6 +645,7 @@ header {
 */
 .page-content {
   padding: 0;
+  background-color: $grey-color-light;
 }
 .page-heading {
   font-size: 20px;
